@@ -63,6 +63,7 @@ class Starship(Base):
     __tablename__ = 'Starships'
     id = Column(Integer, primary_key=True)
     name = Column(String)
+    passangers = Column(Integer)
 
 class FavoriteStarships(Base):
     __tablename__ = 'FavoriteStarships'
