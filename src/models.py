@@ -77,6 +77,8 @@ class Film(Base):
     __tablename__ = 'Films'
     id = Column(Integer, primary_key=True)
     name = Column(String)
+    Director = Column(String)
+    Producer = Column(String)
 
 class FavoriteFilms(Base):
     __tablename__ = 'FavoriteFilms'
